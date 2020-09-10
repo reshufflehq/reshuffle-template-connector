@@ -17,13 +17,13 @@ export default class _CONNECTOR_NAME_Connector extends BaseConnector<
   // Your class variables
   var1: string
 
-  constructor(options: _CONNECTOR_NAME_ConnectorConfigOptions, id?: string) {
-    super(options, id)
-    this.var1 = options.var1
+  constructor(app: Reshuffle, options?: _CONNECTOR_NAME_ConnectorConfigOptions, id?: string) {
+    super(app, options, id)
+    this.var1 = options?.var1 || 'initial value'
     // ...
   }
 
-  onStart(app: Reshuffle) {
+  onStart() {
     // If you need to do something special onStart, otherwise remove this function
   }
 
@@ -32,12 +32,14 @@ export default class _CONNECTOR_NAME_Connector extends BaseConnector<
   }
 
   // Your events
-  on(options: _CONNECTOR_NAME_ConnectorEventOptions, eventId: string): EventConfiguration {
+  on(options: _CONNECTOR_NAME_ConnectorEventOptions, handler: any, eventId: string): EventConfiguration {
     if (!eventId) {
       eventId = `_CONNECTOR_NAME_/${options.option1}/${this.id}`
     }
     const event = new EventConfiguration(eventId, this, options)
     this.eventConfigurations[event.id] = event
+
+    this.app.when(event, handler)
 
     return event
   }
