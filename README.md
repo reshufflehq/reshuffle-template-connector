@@ -1,4 +1,4 @@
-##BEGIN - TO DELETE TILL END
+## BEGIN - TO DELETE TILL END
 
 THIS IS A TEMPLATE REPO FOR NEW RESHUFFLE CONNECTOR
 1. Create a new connector repo from this template using this link https://github.com/reshufflehq/reshuffle-template-connector/generate
@@ -19,15 +19,15 @@ THIS IS A TEMPLATE REPO FOR NEW RESHUFFLE CONNECTOR
 
 //Keep documentation template below
 
-##END
+## END
 
 # reshuffle-_CONNECTOR_NAME_-connector
 
-###Reshuffle _CONNECTOR_NAME_ Connector
+### Reshuffle _CONNECTOR_NAME_ Connector
 
 This connector provides <description>.
 
-####Configuration Options:
+#### Configuration Options:
 ```typescript
 interface _CONNECTOR_NAME_ConnectorConfigOptions {
   foo: string // foo description
