@@ -17,7 +17,7 @@ THIS IS A TEMPLATE REPO FOR NEW RESHUFFLE CONNECTOR
 
 10. If circle CI checks are all green, you are all set!
 
-//Keep documentation template below
+// Keep documentation template below
 
 ## END
 
@@ -48,5 +48,5 @@ The connector fires this event when ...
 ##### action1
 The connector provides action1 which ...
 
-###### action2
+##### action2
 The connector provides action2 which ...
