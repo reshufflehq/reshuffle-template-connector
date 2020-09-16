@@ -1,12 +1,12 @@
 ## BEGIN - TO DELETE TILL END
 
-THIS IS A TEMPLATE REPO FOR NEW RESHUFFLE CONNECTOR
+THIS IS A TEMPLATE REPO FOR NEW RESHUFFLE CONNECTORS
 1. Create a new connector repo from this template using this link https://github.com/reshufflehq/reshuffle-template-connector/generate
 2. Clone the repo locally
 3. Rename all occurrences of _CONNECTOR_NAME_
 4. `npm install`
 5. `npm run build:watch`
-6. Implements your events/actions in `src/index.ts`
+6. Implement your events/actions in `src/index.ts`
 7. `npm run lint`
 8. Push your code
 9. Go to https://app.circleci.com/projects/project-dashboard/github/reshufflehq/
