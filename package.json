@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/reshufflehq/reshuffle-_CONNECTOR_NAME_-connector#readme",
   "dependencies": {
-    "reshuffle-base-connector": "^0.0.10"
+    "reshuffle-base-connector": "^0.0.11"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.10.1",
